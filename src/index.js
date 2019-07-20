@@ -1,12 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+// import './App.css';
+// import Clock from './Clock';
+// import Helloworld from './App';
+// import Method from './Method';
+// import Event from './Event';
+import CustomRoutes from './Routes';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+    <div>
+         {/* <Helloworld link="https://www.facebook.com/" linkText="Facebook"/>
+         <Helloworld link="https://www.google.com/" linkText="Google"/>
+         <Helloworld link="https://www.youtube.com/" linkText="Youtube"/>
+         <Method link="https://www.facebook.com/" name="hamza butt"/>
+         <Clock/>
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+         <Event/> */}
+
+         <CustomRoutes/>
+    </div>
+  
+   , document.getElementById('root'));
+
+
