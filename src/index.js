@@ -67,6 +67,38 @@ class Watch extends React.Component{
           
      }
 }
+
+  function Message(props){
+    if(props.value){
+         return <h1>hamza</h1>
+    }
+    else{
+         return <h1>Asad</h1>
+    }
+  }
+
+   class Pass extends React.Component{
+        constructor(props){
+             super(props);
+             this.state={
+                  value:true
+             }
+        }
+
+        Change(){
+             
+            this.setState({
+               value:!this.state.value
+            });
+        }
+        render(){
+             return(<div>
+               <button onClick={this.Change.bind(this)}>Click Me to Change Message</button>
+               <Message value={this.state.value}/>  
+             </div>
+             )
+        }
+   }
 ReactDOM.render(
     <div>
          {/* <Helloworld link="https://www.facebook.com/" linkText="Facebook"/>
@@ -76,6 +108,7 @@ ReactDOM.render(
          <Clock/>
 
          <Event/> */}
+         <Pass/>
           <NameSun />
           <Watch/>
          <CustomRoutes/>
